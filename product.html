@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/tailwind/output.css">
+    <link rel="stylesheet" href="assets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <header class="bg-[#F6F6F7]">
+        <div class="cart-prev max-w-[1024px] w-full mx-auto flex justify-end">
+            <span id="cart-prev--btn" class="text-[#aaaaaa] text-[12px] py-[10px] px-[15px] cursor-pointer">
+                My Cart (<span id="cart-count">0</span>)
+                <div class="prev-cart--wrapper max-sm:!right-0" data-count="0">
+                    <span class="empty">Empty</span>
+                    <ul id="cart-items"></ul>
+                </div>
+            </span>
+        </div>
+    </header>   
+    <main class="pt-[50px] max-sm:pt-[20px] max-sm:mb-[50px]" id="product-page">
+        <div class="max-w-[1024px] w-full mx-auto max-sm:px-[20px]">
+            <div class="product-container grid grid-cols-2 gap-[20px] max-sm:block">
+                <div class="product-image--container">
+                    <div class="product-image--wrapper"></div>
+                </div>
+                <div class="product-info--container">
+                    <h1 class="product-title max-sm:!text-[20px] max-sm:mt-[20px]"></h1>
+                    <div class="product-price mt-[20px] font-bold"></div>
+                    <div class="product-desc mt-[20px] text-[#888888]"></div>
+                    <div class="product-size mt-[20px]">
+                        <label class="text-[12px] uppercase font-bold text-[#888888]" for="">Size<sup class="text-[#C90000]">*</sup></label>
+                        <div class="size-btn"></div>
+                    </div>
+                    <div class="product-actions mt-[20px]">
+                        <button id="addToCart" class="uppercase px-[15px] py-[10px] border-solid border-[2px] border-[#222222] font-bold hover:bg-black hover:text-white" type="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
